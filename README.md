@@ -110,6 +110,16 @@ conda activate mist-v2
 pip install -r requirements.txt
 ```
 
+and-mill: (Maybe) Use this instead. Actually nevermind. Huggingfacehub error still persists:
+```bash
+conda create -n mist-v2 python=3.10
+conda activate mist-v2
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install -r requirements.txt
+conda install xformers -c xformers
+```
+
+
 #### Usage
 
 Run Mist V2 in the default setup on GPU:
